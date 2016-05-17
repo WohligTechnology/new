@@ -1,0 +1,29 @@
+{
+  "name": "khoon",
+  "homepage": "https://github.com/WohligTechnology/khoon",
+  "authors": [
+    "jayvisariya93 <jayvisariya93@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-loading-bar": "~0.8.0",
+    "angular-sanitize": "~1.4.4",
+    "angular-ui-select": "~0.12.1",
+    "angular-ui-select2": "~0.0.5",
+    "angular-ui-tinymce": "~0.0.12",
+    "ui-select": "*",
+    "angular-ui-sortable": "~0.13.4"
+  }
+}

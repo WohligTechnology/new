@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>
+    Donor List - Hospital Wise
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .main-print {
+      padding: 15px;
+    }
+
+    .border {
+      border: 2px solid #000;
+    }
+
+    .border-dash {
+      border-top: 2px dashed #000;
+      padding-top: 5px;
+      margin-top: 5px;
+    }
+
+    p,
+    span,
+    b {
+      font-size: 10px;
+    }
+
+    .fz10 {
+      font-size: 10px;
+    }
+
+    .fz11 {
+      margin: 0;
+      font-size: 11px;
+    }
+
+    .pd5 {
+      padding: 0px 5px;
+    }
+
+    .container-fluid {
+      padding: 0;
+      margin: 0;
+    }
+
+    .mid-sec-1 p {
+      margin: 2px 0 0;
+    }
+
+    .date + p {
+      margin: 2px 0 0;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .nomg {
+      margin: 0;
+    }
+
+    .fz9 {
+      font-size: 9px;
+    }
+
+    .ib {
+      display: inline-block;
+    }
+
+    .v-top {
+      vertical-align: top;
+    }
+
+    .table {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    .table > thead >tr >th {
+      padding: 1px;
+      font-size: 9px;
+    }
+
+    .table > tbody >tr >td {
+      padding: 1px;
+      font-size: 9px;
+    }
+
+    .underline {
+      height: 8px;
+      border-bottom: 1px solid #000;
+      display: inline-block;
+      margin-bottom: 2px;
+      min-width: 100px;
+      vertical-align: bottom;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+      min-height: 380px;
+    }
+
+    /*.black-bg {
+      background: url('black-bg.jpg');
+      color: #fff;
+      margin-top: 30px;
+    }*/
+
+    @media screen,print {
+      .black-bg {
+        background: url('black-bg.jpg');
+        color: #fff;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tmm">
+    <div class="container-fluid">
+      <div class="main-print">
+        <div class="border">
+          <div class="row">
+            <div class="col-xs-4" style="padding-right: 0;">
+              <div class="section1">
+                <div class="text-center pd5" style="border-bottom: 2px solid #2D2D2D;">
+                  <h6 class="text-uppercase fz11"><b>Tarun mitra mandal</b></h6>
+                  <p class="nomg">8/33, Meghchhaya, Sri Saibaba. Marg, Lalbaug. Munibai - 400 012</p>
+                </div>
+                <div class="mid-sec-1 text-left" style="border-bottom: 2px solid #2d2d2d;">
+                  <div class="pd5">
+                    <h6 class="fz11"><b>Procedure for obtaining blood from the blood bank issuing this Card</b></h6>
+                    <p>1 Submission of this donor card.</p>
+                    <p>2. Authority letter included in this card signed by the donor.</p>
+                    <p>3. Doctor's letter on the hospital letterhead giving details of the patient's name and indication of blood transfusion</p>
+                    <p>4. In case of public hospital the request should come from the hospital blood bank.</p>
+                    <p>5. For carrying a blood bag always use a thermos or a special plastic bags filled with ice.</p>
+                    <p>This card should be preserved carefully, Any change of the address should be notified at once. </p>
+                  </div>
+                </div>
+                <div class="sec1-foot">
+                  <div class="pd5">
+                    <div class="text-center">
+                      <p><b>Blood As Been Issued against the Donor Credit</b></p>
+                    </div>
+                    <span>Sign of M.S.W.</span>
+                    <span class="underline"></span>
+                    <div class="">
+                      <span>Name of the Blood Bank</span>
+                      <span class="fz9 text-uppercase"><b style="font-size:8px">Kem blood bank dept</b></span>
+                    </div>
+                    <p class="nomg">Date :
+                      <span><b style="font-size:8px">04/10/2015</b></span>
+                    </p>
+                    <p class="nomg">Donor ID :
+                      <span><b>V20456</b></span>
+                    </p>
+                    <p class="nomg">Name of the Donor :
+                      <span class="text-uppercase"><b style="font-size:8px">vira vikas</b></span>
+                    </p>
+                    <p class="nomg">Place of the Donation :
+                      <span class="text-uppercase"><b style="font-size:8px">shri k.v.o.s mahajanwadi</b></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4" style="padding-left: 0;border-left: 2px solid #000;border-right:2px dashed #000;">
+              <div class="section2 " style="border-right: 2px solid #000;">
+                <div class="text-center pd5" style="border-bottom: 2px solid #2D2D2D;">
+                  <h6 class="fz11"><b>State Blood Transfusion Council</b></h6>
+                  <p class="nomg">Government of Maharashtra</p>
+                </div>
+                <div class="mid-sec2 text-left">
+                  <div class="" style="border-bottom: 2px solid #2D2D2D;">
+                    <p class="pd5 nomg">This card entitles a donor to get a bag of blood for himself/herself and the donor's immediate family members (Father, Mother, Spouse, Children and Minor Brother, Sister.) either from the member blood bank of the hospital where patient
+                      is admitted or the blood bank issuing this card, Subject to availability of blood,</p>
+                  </div>
+                  <div class="declare" style="border-bottom: 2px solid #2d2d2d;">
+                    <div class="pd5">
+                      <span class="block">Date</span>
+                      <span class="block">I Hereby authorise</span>
+                      <p>Patient's Name
+                        <span class="underline" style="min-width: 143px;"></span>
+                        <span class="block underline" style="min-width: 215px; margin-top:10px;"></span>
+                      </p>
+                      <p>admited in
+                        <span class="underline" style="min-width:165px;"></span>
+                      </p>
+                      <p>Hospital to use my Credit Card.</p>
+                      <p>Donor's Sign
+                        <span class="underline"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sec2-foot">
+                  <p class="pd5">Donors are requested not to use their Credit Cards indiscriminately as this dissuades Patient's healthy relatives from donating Blood.</p>
+                  <div class="text-center">
+                    <b class=""><i>THANK YOU</i></b>
+                    <span class="block ">For saving Lives</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="section3 text-center" style="border-left: 2px solid #000; ">
+                <div class="text-center pd5" style="border-bottom: 2px solid #2D2D2D;">
+                  <h6 class="fz11"><b>State Blood Transfusion Council</b></h6>
+                  <p style="margin: 0">Government of Maharashtra</p>
+                  <p style="margin: 0">Blood Group (Cells &amp; Serum tested)</p>
+                </div>
+                <div class="mid-sec3 text-left" style="border-bottom: 2px solid #2d2d2d;">
+                  <div class="pd5">
+                    <div class="date">
+                      <div class="clearfix">
+                        <div class="pull-left">
+                          <span>Date:</span>
+                          <span><b class="fz9">04/10/2015</b></span>
+                        </div>
+                        <div class="pull-right">
+                          <span>Blood Group:</span>
+                          <span><b style="font-size:17px">O+</b></span>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Name :
+                      <span class="text-uppercase"><b class="fz9">vira vikas shashikant</b></span>
+                    </p>
+                    <div class="add">
+                      <span class="ib v-top">Add :</span>
+                      <span class="text-uppercase ib" style="width: 80%"><b class="fz9">1/30, POONAWALA CRAWL, G. K M LOWER PAREL, BOMBAY. MUMBAI 400013</b></span>
+                    </div>
+                    <p class="nomg clearfix">
+                      <span class="pull-left fz9">DONOR'S SIGNATURE</span>
+                      <span class="underline pull-right"></span>
+                    </p>
+                    <div class="text-center">
+                      <span><i class="block">This is to Certify that</i></span>
+                      <b class="text-uppercase">vira VIKAS (V00287 )</b>
+                    </div>
+                    <p class="nomg">donated blood for the benefit of needy patients in the Blood Donation Drive organised by
+                      <span><b class="text-uppercase">tarun mitra mandal</b> on <b>04/10/2015</b></b>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="text-center" style="border-bottom:2px solid #2d2d2d;">
+                  <p class="nomg">Blood Donations made till date :
+                    <span><b style="font-size:15px">47</b></span>
+                  </p>
+                </div>
+                <div class="sec3-foot" style="">
+                  <div class="reg clearfix" style="padding: 20px 5px 0">
+                    <div class="bottle-no pull-left">
+                      <div class="text-center">
+                        <p class="nomg">Regn/Bottle No</p>
+                        <span class="regn-no pd5" style="border:1px solid #2d2d2d">26455</span>
+                      </div>
+                    </div>
+                    <div class="sign pull-right">
+                      <span class="underline"></span>
+                      <p>Medical Oficer Blood Bank</p>
+                    </div>
+                  </div>
+                  <div class="text-left pd5">
+                    <span class="text-uppercase ib fz9" style="width:60%">check group before transfusion</span>
+                    <span class="ib" style="border:1px solid #2d2d2d; padding: 6px 26px;"></span>
+                  </div>
+                  <div class=" text-center black-bg" style="">
+                    <span class="">Card Sponsored By</span>
+                    <h5 class="nomg"> <b class="text-uppercase">GADA &amp; HARIA FINANCIAL PLANNERS</b></h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="border-dash">
+          <div class="border">
+            <div class="row">
+              <div class="col-xs-5" style="padding-right:0;border-right:2px solid #2d2d2d;">
+                <div class="" style="padding:0 5px;">
+                  <div class="text-center">
+                    <b class="text-uppercase">donor record card</b>
+                    <p class="nomg">(For Blood Bank's Records)</p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="pull-left">
+                      <span>Blood Group :</span>
+                      <span><b>O+</b></span>
+                    </div>
+                    <div class="pull-right">
+                      <span>Donor ID :</span>
+                      <span><b>V00287</b></span>
+                    </div>
+                  </div>
+                  <div class="" style="">
+                    <span>Blood Bank Regn No. /Bottle No. :</span>
+                    <span><b>26455</b></span>
+                  </div>
+                  <div class="clearfix" style="">
+                    <div class="pull-left">
+                      <span>Age :</span>
+                      <span><b>37</b></span>
+                    </div>
+                    <div class="pull-right">
+                      <span>Sex :</span>
+                      <span><b>Male</b></span>
+                    </div>
+                  </div>
+                  <p class="nomg">Name :
+                    <span class="text-uppercase"><b>vira vikas shashikant</b></span>
+                  </p>
+                  <div class="add">
+                    <span class="ib">Add :</span>
+                    <span class="text-uppercase ib" style="width: 80%"><b class="fz9">1/30, POONAWALA CRAWL, G. K M LOWER PAREL, BOMBAY. MUMBAI 400013</b></span>
+                  </div>
+                  <div class="land-no" style="">
+                    <div style="width:50%;" class="ib">
+                      <span>Phone No :</span>
+                      <span><b>24784123</b></span>
+                    </div>
+                    <div class="ib">
+                      <span>(off) :</span>
+                    </div>
+                  </div>
+                  <div class="mob-no clearfix">
+                    <div class="pull-left">
+                      <span>Mobile</span>
+                      <span><b>87160134923</b></span>
+                    </div>
+                    <div class="pull-right">
+                      <span>Weight:(in Kgs)</span>
+                      <span><b>69</b></span>
+                    </div>
+                  </div>
+                  <p style="margin-bottom:2px;">At the call of humanity, I am willing to donate my blood ' voluntarily in the BLOOD DONATION DRIVE organised by
+                    <span><b>TARUN MITRA MANDAL.</b></span>
+                  </p>
+                  <p style="margin-bottom:2px;">To the best of my knowledge I am in a good state of health and eligible for blood donation, I believe that the blood will be tested as per FDA requirements before the needy patient receives the same. However, as a precaution I have truthfully
+                    answered the questionaire put to me by the Blood Bank officials before the blood donation.</p>
+                  <p style="margin-bottom:2px;">I hereby content to donate my blood voluntarily.</p>
+                  <div class="clearfix" style="margin-top:5px">
+                    <div class="pull-left">
+                      <span>Date :</span>
+                      <span><b>04/10/2015</b></span>
+                    </div>
+                    <div class="pull-right">
+                      <span class="underline" style="min-width: 120px;"></span>
+                      <div class="text-center">
+                        <p>Signature of Blood Donor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec4-foot" style="padding-bottom:5px">
+                    <table class="table table-bordered table-condensed">
+                      <tbody>
+                        <tr>
+                          <td>S. No.</td>
+                          <td style="width:50%"></td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Bag No.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Bag Type</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Blood Volume (ml)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Temprature (degrees) F</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Pulse/min</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>B.P.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>(mm Hg.)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Haemoglobin > 12.5 gm %</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Others</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Donor reaction</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Whether rejected and reasons thereof</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Signature of Med. Off.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Signature of Donor</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-7" style="padding:0 20px 0 5px">
+                <div class="sec5">
+                  <div class="questn" style="padding: 5px">
+                    <div class="pull-left">
+                      <div class="box text-center pd5" style="border: 1px solid #000;">
+                        <span>Date</span>
+                        <span class="block"><b>04/10/2015</b></span>
+                      </div>
+                    </div>
+                    <div class="pull-right pd5" style="border: 1px solid #000;">
+                      <span>Bottle No.</span>
+                      <span class="block"><b>26455</b></span>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="nomg">BLOOD DONOR QUESTIONAIRE</p>
+                    <p class="nomg">The purpose of this questionaire is to protect</p>
+                    <p class="nomg">Both and the who receives blood</p>
+                  </div>
+                  <table class="table table-bordered table-condensed">
+                    <thead>
+                      <tr>
+                        <th style="width:30%">
+                          History of
+                        </th>
+                        <th style="width:15%">
+                          Yes, when
+                        </th>
+                        <th style="width: 5%">
+                          No
+                        </th>
+                        <th style="width:30%">
+                          History of
+                        </th>
+                        <th style="width:15%">
+                          Yes, when
+                        </th>
+                        <th style="width: 5%">
+                          No
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Jaundice
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Cold/Cough
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Malaria
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Cancer
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Alcohol/intake frequency
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Convulsions/Fainting
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Diabetes
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Surgery
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Fever
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Accident
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          High Blood Pressure
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Transfusion of blood/Blood products
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Heart/Lung Diseases
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Accupunture
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Leprosy
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Drug Abuse Tacto
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Liver/Kidney Disease
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Ear-piercing
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Measles/Mumps
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Taking medicines(specify)
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Chicken Pox
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Vaccination (specify)
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Typhoid
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Unexplained weight loss
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Tuberculosis
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Chronic Diarrhea
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Syphills
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Swollen lymph glands
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Skin Disease
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Allergy
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Being refused as a blood donor
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Asthama
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Discomfort during last donation
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Bleeding Tendency
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                          Virus that causes AIDS
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-bordered table-condensed">
+                    <caption class="text-center" style="padding:0;">FOR FEMALES : </caption>
+                    <thead>
+                      <tr>
+                        <th>Are you in period</th>
+                        <th>Yes, when</th>
+                        <th>No</th>
+                        <th>Are you Pregnant</th>
+                        <th>Yes, when</th>
+                        <th>No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <div class="container">
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="sec5-foot">
+                    <p>I give my consent to test my blood for NEVI &amp; 2,Syphilis,Hepatitis B &amp; C, Malaria and any other required test in any manner,decmed appropriate by the blood bank for my Safty and that of receipent.</p>
+                    <p> I have understood all the questions mentioned above and answered best of my knowledge.</p>
+                    <div class="pull-right" style="margin-top: 25px;">
+                      <span class="underline"></span>
+                      <div class="text-center">
+                        <span class="block ">Sign of Donor</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

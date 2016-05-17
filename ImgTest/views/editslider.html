@@ -1,0 +1,59 @@
+<div class="page">
+   <h2 class="title">
+</h2>
+
+   <div class="row">
+      <div class="col-md-12">
+         <section class="panel panel-default" style="border-radius:0px;">
+            <div class="panel-heading panel-hdr"><span class="glyphicon glyphicon-th mr5"></span>Edit Slider
+            </div>
+            <div class="panel-body">
+               <form name="form_constraints" class="form-validation" data-ng-submit="submitForm()">
+                  <div class='form-group'>
+                     <label>Name</label>
+                     <input type='text' class='form-control' ng-model='slider.name' placeholder='Name'> </div>
+                  <div class='form-group'>
+                     <label for='exampleInputEmail1'>Certi</label>
+                     <div class='scroll-x'>
+                        <div class='img-box'>
+                           <div class='many-img' ng-if='slider.certi'><img ng-src='{{slider.certi | uploadpath}}' width='200'>
+                              <button type='button' ng-click='removeimagecerti();' class='btn btn-danger close-btn'><i class='glyphicon glyphicon-trash'></i></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class='upload-div'>
+                        <div ng-init='httpMethod=POST;howToSend = 1;'></div>
+                        <div class='upload-buttons'>
+                           <input type='file' name='file' ng-file-select='onFileSelect($files,1,"single")' onclick='this.value=null'>
+                        </div>
+                     </div>
+                  </div>
+                  <div class='form-group'>
+                     <label for='exampleInputEmail1'>Homeslide</label>
+                     <div class=''>
+                        <div class='img-box'>
+                           <ul ui-sortable ng-model='slider.homeslide' ng-if='slider.homeslide.length!=0'>
+                              <li ng-repeat='bill in slider.homeslide' class='many-img'><img ng-src='{{bill | uploadpath}}' ng-if='slider.homeslide.length!=0' width='200'>
+                                 <button type='button' ng-click='removeimagehomeslide(slider.homeslide.indexOf(bill));' class='btn btn-danger close-btn'><i class='glyphicon glyphicon-trash'></i></button>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class='upload-div'>
+                        <div ng-init='httpMethod=POST;howToSend = 1;'></div>
+                        <div class='upload-buttons'>
+                           <input type='file' name='file' ng-file-select='onFileSelect($files,2,"multiple")' onclick='this.value=null' multiple>
+                        </div>
+                     </div>
+                  </div>
+                  <array objval='ArrTestStructure' label='ArrTest' editval='slider.arrtest'></array>
+                  <!--Add New Tags-->
+                  <div class="text-center" style="padding-bottom:20px;">
+                     <button type="submit" class="btn btn-primary all-btn">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </div>
+   </div>
+</div>

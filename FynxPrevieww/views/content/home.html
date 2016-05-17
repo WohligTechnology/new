@@ -1,0 +1,61 @@
+<div class="container">
+
+
+  <div class="col-md-5 some-height">
+    <div class="custom-img" fix-scroller>
+      <div class="zoom-holder relative">
+        <!-- <div id="tango">
+          <img class="img-responsive m-center" ng-src="{{custom.frontSrc | serverimage}}">
+          <div class="on-img shirtcanvas" style="top:280px;width:45%;">
+            <div class="canvasitem movefirstimage" ng-if="customjson.image.image!=''" ng-style="customjson.custom[4].containercss">
+              <img class="auto-dim m-center" ng-style="customjson.custom[4].css" ng-src="{{customjson.image.image | serverimage}}">
+            </div>
+
+            <div class="canvasitem movetext"  ng-repeat="txt in customjson.custom track by $index" ng-style="txt.containercss">
+              <span id="example{{txt.id}}" class="textspan"
+               name="distext" ng-style="txt.css" ng-bind="txt.text" ng-if="$index==0 || $index==1" ></span>
+
+            </div>
+          </div>
+        </div> -->
+        <div>
+          <img class="img-responsive m-center" ng-src="{{custom.backSrc | serverimage}}">
+          <div class="on-img shirtcanvas" style="top:280px;width:45%">
+            <div class="canvasitem movesecondimage" ng-if="customjson.image.image1!=''" ng-style="customjson.custom[5].containercss">
+              <img class="auto-dim m-center" ng-style="customjson.custom[5].css" ng-src="{{customjson.image.image1 | serverimage}}">
+
+            </div>
+            <div class="canvasitem movetext" ng-repeat="txt in customjson.custom track by $index" ng-style="txt.containercss">
+              <span id="example{{txt.id}}" name="distext" ng-style="txt.css" ng-bind="txt.text" ng-if="$index==2 || $index==3"></span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="vertical icon" fix-scroller>
+
+      <!-- <div class="icon-inner text-center reset-zoom" ng-click="isfront = !isfront;">
+        <i class="flaticon flaticon-t-shirt-o"></i>
+        <p ng-show="isfront">Back</p>
+        <p ng-show="!isfront">Front</p>
+      </div> -->
+
+      <div class="icon-inner text-center zoom-img">
+        <i class="flaticon flaticon-zoom"></i>
+        <p>Zoom</p>
+      </div>
+
+      <div class="icon-inner text-center reset-zoom">
+        <i class="flaticon flaticon-cross"></i>
+        <p class="margin-zero">Reset</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

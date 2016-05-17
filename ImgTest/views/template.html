@@ -1,0 +1,49 @@
+
+<div class="container-fluid">
+   
+<!--   HEADER-->
+    <div class="row templatemain header" ng-if="template.list==1 || template.list==2">
+        <div class="col-md-12">
+            <div ng-include="template.header" class="template header"></div>
+        </div>
+    </div>
+    
+    
+    <div class="row templatemain maincontent" ng-if="template.list==1">
+        <div class="col-md-3 templatemain menu" style="margin-top:-3px;">
+            <div ng-include="template.menu" class="template menu"></div>
+        </div>
+        <div class="col-md-6 templatemain content">
+            <div ng-include="template.content" class="template content"></div>
+        </div>
+        <div class="col-md-3 templatemain content" style="margin-top: 10px; padding-left: 3px;">
+            <div ng-include="template.submenu" class="template content"></div>
+        </div>
+    </div>
+    
+    
+    <div class="row templatemain maincontent" ng-if="template.list==2">
+        <div class="col-md-3 templatemain menu" style="margin-top:-3px;">
+            <div ng-include="template.menu" class="template menu"></div>
+        </div>
+        <div class="col-md-9 templatemain content">
+            <div ng-include="template.content" class="template content"></div>
+        </div>
+    </div>
+    
+    
+    <div class="row templatemain maincontent" ng-if="template.list==3">
+        <div class="templatemain content">
+            <div ng-include="template.content" class="template content"></div>
+        </div>
+    </div>
+    
+<!--    FOOTER-->
+    <div class="row templatemain footer" ng-if="template.list==1 || template.list==2">
+        <div class="col-md-12">
+            <div ng-include="template.footer" class="template footer"></div>
+        </div>
+    </div>
+    
+    
+</div>

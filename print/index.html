@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Print Invoice</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="view-port" description="width=device-width, initial-scale=1.0">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <style>
+  .main {
+    border: 2px solid #434343;
+    font-weight: 700;
+  }
+ .table {
+    border: 2px solid #434343;
+    margin: 20px 0 0;
+  }
+  .table > thead > tr > th { border-bottom: 2px solid #434343; }
+  .invoice-detail {
+    padding: 10px;
+  }
+  .back-gray {
+    background-color: #EBEBEB;
+  }
+  .bottom-line {  border-bottom: 2px solid #434343; }
+  </style>
+  <body>
+<div class="container">
+  <div class="logo" style="margin:0 auto; padding:40px 0;">
+    <figure>
+      <img class="responsive" src="cccline.png" alt="logo">
+    </figure>
+  </div>
+  <h4 class="text-uppercase text-center">tax invoice</h4>
+  <div class="main">
+    <div class="invoice-detail back-gray bottom-line">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="">
+            <span>Invoice#</span>
+            <span>EX000001238</span>
+          </div>
+          <div class="">
+            <span>Invoice Date</span>
+            <span>10.4.2012</span>
+          </div>
+          <div class="">
+            <span>Order#</span>
+            <span>00012256358</span>
+          </div>
+          <div class="">
+            <span>Order Date</span>
+            <span>9.4.2012</span>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="text-right">
+            <div class="">
+              <span>VAT TIN No.</span>
+              <span>27850932475V</span>
+            </div>
+            <div class="">
+              <span>CST TIN No.</span>
+              <span>27850932475V</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-line">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="invoice-detail" style="border-right: 2px solid #434343;">
+            <span>BILL TO:</span>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="invoice-detail">
+            <span>SHIP TO:</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="invoice-detail">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="">
+            <div class="">
+            <address>
+                <span>Juveca Panda</span> <br> <span>Replacement Order</span> <br> <span>Maharashtra India-400026</span>
+                <br> <span>T:9892206247</span>
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="">
+            <div class="" style="padding-bottom:15px;">
+            <address>
+              <span>Juveca Panda</span> <br> <span>B, 160 DN Road,</span> <br> <span>2nd Floor, Esplanade School Building, Fort,</span> <br> <span>Mumbai - 400 001.</span>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table class="table back-gray">
+    <thead>
+      <th style="padding-left:15px">Products</th>
+      <th>SKU</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Tax</th>
+      <th class="text-right" style="padding-right:15px">Subtotal</th>
+    </thead>
+  </table>
+  <table class="table">
+      <tr style="background-color:#fff">
+        <td style="padding-left:15px">Total:</td>
+        <td colspan="4"></td>
+        <td class="text-right" style="padding-right:15px">2,142.86</td>
+      </tr>
+      <tr style="background-color:#fff">
+        <td style="padding-left:15px">Total vat:</td>
+          <td colspan="4"></td>
+        <td class="text-right" style="padding-right:15px">107.14</td>
+      </tr>
+      <tr style="background-color:#fff">
+        <td style="padding-left:15px">Shipping charges:</td>
+          <td colspan="4"></td>
+        <td class="text-right"style="padding-right:15px">500.00</td>
+      </tr>
+      <tr style="background-color:#fff">
+        <td style="padding-left:15px">Final Total:</td>
+          <td colspan="4"></td>
+        <td class="text-right" style="padding-right:15px">2,750.00</td>
+      </tr>
+    </table>
+    <div class="footer" style="margin-top: 80px; padding-top: 80px;">
+      <div class="thankyou text-center" style="border-bottom:2px solid #000;">
+        <p class="text-bold"style="font-weight:600;">Thank you for shopping with us at Custom Cricket Company!</p>
+      </div>
+      <div class="address text-center" style="padding: 20px 0 40px 0;">
+        <span class="text-uppercase text-bold" style="font-weight:600;">Custom Cricket Company</span>
+        <address style="margin-bottom:0;font-weight:600;">
+         69,Pochkhanwala Road,Worli,Mumbai 400030.India
+        </address>
+        <div class="phones" style="font-weight:600;">
+        <span class="phone" style="border-right:2px solid #333;padding:0 5px; vertical-align:middle;">India +91 22 2369 7043/45</span>
+        <span class="sms" style="vertical-align:middle;">Whatsapp/SMS +91 98205 79300</span>
+        </div>
+        <div class="links" style="font-weight:600;">
+        <span class="mail" style="border-right:2px solid #333;padding:0 5px; vertical-align:middle;">umpire@customcricketcompany.com</span>
+        <span class="link" style="vertical-align:middle;">www.customcricketcompany.com</span>
+        </div>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>

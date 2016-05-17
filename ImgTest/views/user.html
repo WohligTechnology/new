@@ -1,0 +1,57 @@
+<div>
+    <h2 class="title">
+</h2>
+    <div class="page">
+
+        <div class="row">
+            <div class="col-md-12">
+                <section class="panel panel-default" style="border-radius:0px;">
+                    <div class="panel-heading panel-hdr"><span class="glyphicon glyphicon-th mr5"></span>Show User
+                    </div>
+                    <div class="panel-body">
+                        <div class="bot search-box">
+                            <input type="search" name="search" ng-model="pagedata.search" placeholder="Search" ng-change="reload(pagedata);" />
+                            <a href="#/createuser" class="right btn btn-primary all-btn create-btn">Create User</a>
+                            <div class="pull-right">
+
+                                <select ng-model="pagedata.limit" class="form-control" ng-change="reload({page:'1',limit:pagedata.limit,search:pagedata.search})">
+
+                                    <option value="20" selected>20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="margin-top:10px;">
+                            <table class="table table-bordered ">
+                                <thead>
+                                    <tr class="bg-dark">
+                                        <th class="text-center">Name</th>
+                                        <th colspan="2" class="text-center">Operations</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="value in user.data">
+                                        <td class="text-center">{{value.name}}</td>
+                                        <td class="text-center"><a ng-click="deletefun(value._id)" class="btn btn-primary all-btn"><i class="fa fa-times"></i></a>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#/edituser/{{value._id}}" class="btn btn-primary all-btn">
+                                                <i class="fa fa-pencil-square-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination">
+                                    <li ng-class="page.class" ng-repeat="page in pages"><a ng-click="reload({page:page.pageno,limit:pagedata.limit,search:pagedata.search});">{{page.pageno}}</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                </section>
+                </div>
+            </div>
+        </div>
+    </div>
